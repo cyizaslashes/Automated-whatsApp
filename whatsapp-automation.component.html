@@ -1,0 +1,15 @@
+<div>
+    <h2>WhatsApp Automation</h2>
+    <form (ngSubmit)="sendWhatsAppMessage()">
+      <div>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  
